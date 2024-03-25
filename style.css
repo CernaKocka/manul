@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+*{
+    font-family: "JetBrains Mono", Roboto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header-barva{
+    background-color: #B19470;
+}
+.primary {
+    background-color: #F8FAE5;
+}
+.secondary {
+    background-color: #43766C;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.header-nav, .header-nav ul li {
+    display: inline-block;
+}
+
+.header-nav ul li a{
+    text-decoration: none;
+    color: blue;
+}
+
+.header-nav
+.header-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section{
+    padding: 25px 0;
+}
+
+.fotka{
+    border-radius: 5%;
+}
+
+.info-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 25px 0 50px 0;
+}
+
+.info-section > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.info-icon{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
