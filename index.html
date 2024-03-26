@@ -4,51 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
     <header class="header-barva">
-        <a href="/"><img src="https://picsum.photos/50" alt=""></a> <!-- Logo -->
+        <a href="index.html" class="logo"><img src="imgs/logo.png" height="50px" width="50px" alt=""></a> <!-- Logo -->
         <nav class="header-nav">
             <ul>
-                <li><a href="/">Domů</a></li>
-                <li><a href="/podekovani.html">Poděkování</a></li>
-                <li><a href="/kontakt.html">Kontakt</a></li>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="podekovani.html">Poděkování</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav> <!-- Hamburger menu -->
     </header>
     <main>
         <section class="primary">
-            <h1>NADPIS</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum architecto fuga aut, rerum excepturi quo hic officiis mollitia! Facilis magnam numquam fugit beatae tempora sed iure dolore modi molestiae.</p>
-            <img src="https://picsum.photos/200" class="fotka" alt="">
+            <h1>Manul</h1>
+            <div class="inline">
+                <p>Manul, nazývaný též kočka stepní, je divoká kočka žijící v kamenitých stepích a horských oblastech střední Asie. Je to jediný zástupce rodu Otocolobus a vyznačuje se robustní postavou, krátkýma nohama a ušima a hustou srstí, která ho chrání před drsným podnebím. Na rozdíl od jiných koček má manul kulaté zornice a vydává zvuky spíše podobné psímu štěkotu než mňoukání.
+
+                    Manul je samotářská šelma, aktivní převážně v noci. Loví drobné hlodavce a ptáky, přičemž se spoléhá na svůj vynikající sluch a maskování. Je ohrožen ztrátou biotopu a lovem pro kožešinu, a proto je zařazen mezi zranitelné druhy.</p>
+                <img src="imgs/manul1.webp" class="fotka" alt="">
+            </div>
+
             <h2>Galerie</h2>
-            <img src="https://picsum.photos/200" class="fotka" alt="">
+            <img src="imgs/galerie/1.webp" id="galerie" alt="">
         </section>
 
         <section class="secondary info-section">
-            <h2>Podnadpis</h2>
+            <h2>Fakta</h2>
+            <div class="fakta-container">
                 <div>
-                    <img src="https://picsum.photos/150" alt="" class="info-icon">
-                    <h3>TEXT</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, qui!</p>
+                    <img src="imgs/zarovka.png" alt="" class="info-icon">
+                    <h3>Chlupatý rekordman</h3>
+                    <p>Na jeden centimetr čtvereční jeho srsti připadá až 9 000 chloupků</p>
                 </div>
                 <div>
-                    <img src="https://picsum.photos/150" alt="" class="info-icon">
-                    <h3>TEXT</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, qui!</p>
+                    <img src="imgs/zarovka.png" alt="" class="info-icon">
+                    <h3>Mistr maskování</h3>
+                    <p>Jeho hustá srst a skvrnitá srst mu umožňují splynout s okolním prostředím.</p>
                 </div>
                 <div>
-                    <img src="https://picsum.photos/150" alt="" class="info-icon">
-                    <h3>TEXT</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, qui!</p>
+                    <img src="imgs/zarovka.png" alt="" class="info-icon">
+                    <h3>Nešikovný lovec</h3>
+                    <p>Manulové mají jen 1 ze 3 lovů úspěšných.</p>
                 </div>
+            </div>
         </section>
 
         <section class="primary">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, repudiandae neque, et quidem eius illo velit, iure hic dolorem minus amet dolores nostrum nihil at deleniti suscipit delectus ipsa. Doloremque consequatur tempora velit ut omnis eum optio sit assumenda quae, hic magnam error fugiat vero suscipit aliquam. Quibusdam, quos eveniet!</p>
+            <p class="yap">Manul se vyskytuje v oblastech od Kazachstánu a Uzbekistánu přes Mongolsko a Čínu až do Tibetu a Íránu. Preferuje nadmořské výšky od 1 500 do 5 000 metrů nad mořem, kde obývá skalnaté stepi, horské louky a řídké lesy. Díky husté srsti a širokým tlapkám se mu daří i v drsných podmínkách s mrazivými zimami a sněhovou pokrývkou.
+<br>Je to obvykle aktivní v noci, kdy se vydává na lov. Své kořisti, jako jsou svišti, sysli, pískomilové a ptáci, se přibližuje nenápadně a s bleskovou rychlostí je chytá svými mohutnými tlapami. Je to vynikající lovec s výborným sluchem a zrakem, který mu umožňuje lovit i ve tmě.
+<br>Je to samotářské zvíře, které si svá teritoria značí močí a výměšky pachových žláz. Své teritorium aktivně brání před vetřelci, a to i za cenu boje. Jedinou výjimkou z jeho samotářského života je období říje, kdy se samci a samice sdružují k páření.
+            </p>
 
-            <h2>Newsletter</h2>
+            <h2 style="margin-top: 25px;">Newsletter</h2>
             <form action="">
                 <input type="text" placeholder="email@example.com"> 
                 <button>Připojit se</button>
@@ -57,13 +68,13 @@
     </main>
 
     <footer class="header-barva">
-        <img src="https://picsum.photos/50" alt="">
+        <img src="imgs/logo.png" height="50px" width="50px" alt="">
         <div> <!-- Container -->
             <p>Odkazy:</p>
             <ul>
-                <ol><a href="/index.html">Domů</a></ol>
-                <ol><a href="/kontakt.html">Kontakt</a></ol>
-                <ol><a href="/podekovani.html">Poděkování</a></ol>
+                <ol><a href="index.html">Domů</a></ol>
+                <ol><a href="kontakt.html">Kontakt</a></ol>
+                <ol><a href="podekovani.html">Poděkování</a></ol>
             </ul>
         </div>
     </footer>

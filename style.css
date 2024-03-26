@@ -15,13 +15,26 @@
 }
 .secondary {
     background-color: #43766C;
+    color: white;
+
 }
+
+.inline{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* HEADER */
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+    padding: 5px 15px;
+}
+
+.logo{
+    height: fit-content;
 }
 
 .header-nav, .header-nav ul li {
@@ -30,40 +43,83 @@ header{
 
 .header-nav ul li a{
     text-decoration: none;
-    color: blue;
+    color: white;
+    text-decoration: none;
+    transition: 0.1s;
 }
-
-.header-nav
 .header-nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: 2px solid underline;
 }
 
+
+/* MAIN */
 section{
-    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 5%;
 }
 
+h1{
+    font-size: 40px;
+}
 .fotka{
     border-radius: 5%;
+    width: 50%;
+    object-fit: cover;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 0 20px;
+}
+#galerie{
+    border-radius: 5%;
+    height: 250px;
 }
 
 .info-section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 25px;
     padding: 25px 0 50px 0;
 }
+.info-section .fakta-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
 
-.info-section > div {
-    width: 50%;
+.fakta-container > div {
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 .info-icon{
-    width: 150px;
-    height: 150px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     margin-bottom: 10px;
+    border: 2px solid white;
+    padding: 7px;
+}
+
+.yap{
+    padding: 0 20%;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    width: 100%;
+}
+.bottom{
+    position: absolute;
+    bottom: 0;
 }
