@@ -4,6 +4,6 @@ var obrazek = 2;
 
 setInterval(() => {
     if (obrazek > pocet_obrazku) obrazek = 1
-    document.getElementById("galerie").src = "imgs/galerie/" + obrazek + ".webp";
+    document.getElementById("slideshow").src = "imgs/galerie/" + obrazek + ".webp";
     obrazek++;
 }, 5000)

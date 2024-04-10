@@ -71,9 +71,33 @@ h1{
     max-height: 300px;
     margin: 0 20px;
 }
-#galerie{
+#slideshow{
     border-radius: 5%;
-    max-height: 250px;
+    max-height: 300px;
+}
+
+.galerie{
+    width: fit-content;
+    display: flex;
+    height: 100px;
+    gap: 6px;
+    margin-top:25px;
+}
+.obrazek{
+    height: 75px;
+    width: 175px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.obrazek1{
+    background-image: url("./imgs/galerie/4.webp");
+}
+.obrazek2{
+    background-image: url("./imgs/galerie/3.webp");
+}
+.obrazek3{
+    background-image: url("./imgs/galerie/2.webp");
 }
 
 .info-section{
