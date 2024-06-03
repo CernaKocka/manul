@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
+:root{
+    --header-background: #B19470;
+    --primary: #F8FAE5;
+    --secondary: #43766C;
+}
+
 *{
     font-family: "JetBrains Mono", Roboto;
     box-sizing: border-box;
@@ -7,14 +13,18 @@
     padding: 0;
 }
 
+input[type="text"]:focus{
+    outline: none;
+}
+
 .header-barva{
-    background-color: #B19470;
+    background-color: var(--header-background);
 }
 .primary {
-    background-color: #F8FAE5;
+    background-color: var(--primary);
 }
 .secondary {
-    background-color: #43766C;
+    background-color: var(--secondary);
     color: white;
 
 }
@@ -31,10 +41,6 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 5px 15px;
-}
-
-.logo{
-    height: fit-content;
 }
 
 .header-nav, .header-nav ul li {
@@ -57,17 +63,23 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px 5%;
+    padding: 25px 20%;
 }
 
 h1{
     font-size: 40px;
 }
+h2{
+    margin-top: 25px;
+}
+
 .fotka{
     border-radius: 5%;
     width: 50%;
     object-fit: cover;
     max-width: 300px;
+    width: 300px;
+    height: auto;
     max-height: 300px;
     margin: 0 20px;
 }
@@ -78,12 +90,11 @@ h1{
 
 .galerie{
     width: fit-content;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    display: flex;
     height: 100px;
     gap: 6px;
     margin-top:25px;
+    justify-content: center;
 }
 .obrazek{
     height: 75px;
@@ -136,6 +147,16 @@ h1{
     padding: 0 20%;
 }
 
+.newsletter-email{
+    padding: 5px
+}
+.newsletter-button{
+    padding: 5px;
+}
+.newsletter-button:hover{
+    cursor:pointer;
+}
+
 /* FOOTER */
 
 footer{
@@ -149,9 +170,22 @@ footer{
     position: absolute;
     bottom: 0;
 }
+footer img:hover{
+    animation: 1s rotate infinite;
+}
 
-@media screen and (max-width: 500px) {
-    *{
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    *, ::not(footer){
         flex-direction: column;
     }
     .fotka{
@@ -160,7 +194,17 @@ footer{
     }
     .inline{
         flex-direction: column-reverse;
+        align-items: center;
     }
+
+    #slideshow, .galerie{
+        max-width: 90%;
+    }
+
+    .galerie *:last-child{
+        display: none;
+    }
+
     .info-section .fakta-container{
         flex-direction: column;
         align-items: center;
@@ -171,5 +215,11 @@ footer{
     }
     #galerie{
         max-width: 90%;
+    }
+    section{
+        padding: 25px 5%;
+    }
+    .yap{
+        padding: 25px 5%;
     }
 }
